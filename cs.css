@@ -1,0 +1,203 @@
+.main {
+    height: 400px;
+    width: 600px;
+    margin: 0px auto;
+    background-image: url('i/a.jpg');
+    background-repeat: no-repeat;
+    cursor: url('shoot.png'), auto;
+    overflow: hidden !important;
+    position: absolute;
+}
+
+.dash-screen {
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+}
+
+.play-btn {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 30%;
+    margin-left: 35%;
+    text-align: center;
+    height: 43px;
+    width: 200px;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+.crack {
+    width: 24px;
+    height: 25px;
+    background-image: url("i/cracked.png");
+    background-repeat: no-repeat;
+    background-size: 24px 25px;
+    position: absolute;
+}
+
+.birdsA {
+    height: 42px;
+    width: 50px;
+    background-image: url('birds/a1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-animation: birdA infinite 1s;
+}
+
+.birdsB {
+    height: 42px;
+    width: 60px;
+    background-image: url('birds/b1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-animation: birdB infinite 1s;
+}
+
+.birdsC {
+    height: 100px;
+    width: 112px;
+    background-image: url('birds/n/n1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    -webkit-animation: birdC infinite 1s;
+}
+
+.bilash {
+    height: 50px;
+    width: 50px;
+    background-image: url('birds/n/talk.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-animation: rotate infinite 700ms;
+}
+
+.blood {
+    background-image: url("birds/n/blood.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+@-webkit-keyframes birdA {
+    25% {
+        background-image: url('birds/a1.png');
+    }
+    50% {
+        background-image: url('birds/a2.png');
+    }
+    75% {
+        background-image: url('birds/a3.png');
+    }
+    100% {
+        background-image: url('birds/a4.png');
+    }
+}
+
+@-webkit-keyframes birdB {
+    10% {
+        background-image: url('birds/b1.png');
+    }
+    20% {
+        background-image: url('birds/b2.png');
+    }
+    30% {
+        background-image: url('birds/b3.png');
+    }
+    40% {
+        background-image: url('birds/b4.png');
+    }
+    50% {
+        background-image: url('birds/b5.png');
+    }
+    60% {
+        background-image: url('birds/b6.png');
+    }
+    70% {
+        background-image: url('birds/b7.png');
+    }
+    80% {
+        background-image: url('birds/b8.png');
+    }
+    90% {
+        background-image: url('birds/b9.png');
+    }
+    100% {
+        background-image: url('birds/b10.png');
+    }
+}
+
+
+@-webkit-keyframes birdC {
+    10% {
+        background-image: url('birds/n/n1.png');
+    }
+    30% {
+        background-image: url('birds/n/n2.png');
+    }
+    45% {
+        background-image: url('birds/n/n3.png');
+    }
+    65% {
+        background-image: url('birds/n/n4.png');
+    }
+    75% {
+        background-image: url('birds/n/n5.png');
+    }
+    85% {
+        background-image: url('birds/n/n6.png');
+    }
+    100% {
+        background-image: url('birds/n/n7.png');
+    }
+}
+
+@-webkit-keyframes rotate {
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes talking {
+    50% {
+        background-image: url('birds/n/talk.png');
+    }
+    100% {
+        background-image: url('birds/n/no-talk.png');
+    }
+}
+
+.hideMe {
+    -webkit-animation: hide both 2s;
+}
+
+@-webkit-keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

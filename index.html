@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="cs.css"/>
+    <title>Test</title>
+</head>
+<body style="background-color: rgba(0,0,0, 0.8); font-family: sans-serif;"
+        onload="Shoting.start()">
+
+
+<div class="main">
+    <audio id="gunshot" src="tunes/gs.mp3" volume="2"></audio>
+    <audio id="reload" src="tunes/reload.mp3"></audio>
+    <audio id="empty" src="tunes/empty.mp3"></audio>
+    <div class="dash-screen">
+        <div class="play-btn">Play</div>
+    </div>
+
+    <p id="level" style="position: absolute; top: 0; font-size: 15px; color: #fff; margin: 5px;">Level 1</p>
+    <p id="killed" style="position: absolute; bottom: 0; font-size: 15px; color: #fff; margin: 5px;">Killed: 0 birds</p>
+    <p id="bullet" style="position: absolute; top: 0; right: 0px; font-size: 15px; color: #fff; margin: 5px;">Bullet: 25 left</p>
+    <p id="missed" style="position: absolute; bottom: 0; right: 0px; font-size: 15px; color: #fff; margin: 5px;">Missed: 0 birds</p>
+
+</div>
+</body>
+</html>
